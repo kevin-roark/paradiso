@@ -14,7 +14,7 @@ app.set('views', __dirname + '/views');
 
 if ('development' == process.env.NODE_ENV) {
   app.use('/main.js', browserify('./client/login.js'));
-  app.use('/order.js', browerserif('./client/app.js'))
+  app.use('/order.js', browserify('./client/app.js'))
 }
 app.use(express.static(__dirname + '/public'));
 

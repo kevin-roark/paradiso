@@ -13,20 +13,17 @@ request.get('/client', function(res) {
 });
 
 $('#login').click(function() {
-  request
-    .post(DELIV + '/third_party/authorize')
-    .set('client_id', key)
-    .set('redirect_uri', US + '/inside')
-    .set('response_type', 'code')
-    .set('scope', 'global')
-    .set('state', 'lol')
-    .end(function(err, res) {
-      console.log(res);
-    });
+  var query = {
+    client_id: key,
+    redirect_uri: US + '/inside',
+    response_type: 'code',
+    scope: 'global',
+    state: 'lol'
+  };
+  var p = $.param(query);
+  var qs = DELIV + '/third_party/authorize?' + p; 
+  window.location = qs;
 
   $(this).unbind('click'); // disable future clicks
 });
 
-$('#food').click(function() {
-  
-});
