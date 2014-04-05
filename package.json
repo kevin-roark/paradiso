@@ -1,0 +1,31 @@
+{
+  "name": "paradiso",
+  "version": "0.0.0",
+  "description": "consumers",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevin-roark/paradiso.git"
+  },
+  "keywords": [
+    "hot",
+    "products"
+  ],
+  "author": "kevin n ben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevin-roark/paradiso/issues"
+  },
+  "homepage": "https://github.com/kevin-roark/paradiso",
+  "dependencies": {
+    "superagent": "~0.17.0",
+    "express": "~3.5.1",
+    "mustache-express": "~1.0.1",
+    "browserify-middleware": "~2.5.0",
+    "jquery": "~2.1.0"
+  }
+}
