@@ -6,3 +6,57 @@
   padding: 0;
   font-family: Helvetica Neue, Helvetica;
 }
+
+html
+{
+  height: 100%;
+  background: -webkit-linear-gradient(#5395E3, #C2DAF5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5395E3, #C2DAF5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5395E3, #C2DAF5); /* For Firefox 3.6 to 15 */
+  background: -ms-linear-gradient(#5395E3, #C2DAF5);
+  background: linear-gradient(#5395E3, #C2DAF5); /* Standard syntax */
+}
+
+.paradiso-logo {
+    width: 368px;
+    vertical-align: top;
+}
+
+.paradise-button {
+  background: #168add;
+
+  -webkit-border-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 5px auto;
+
+  font-family: 'Source Code Pro', Monaco, "Courier New", monospace;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+
+  height: 65px;
+  width: 350px;
+  text-align: center;
+
+  margin: 5% auto;
+
+  -moz-box-shadow:    0px 0px 16px 0px #FFFFFF;
+  -webkit-box-shadow: 0px 0px 16px 0px #FFFFFF;
+  box-shadow:         0px 0px 16px 0px #FFFFFF;
+}
+
+
+#main-buttons {
+  margin: 0 auto;
+  width: 300px; 
+}
+
+#food-1 { background: #B9DAFF; }
+#food-2 { background: #7AAAE2; }
+#food-3 { background: #537FB3; }

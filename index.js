@@ -49,6 +49,10 @@ app.get('/inside', function(req, res, next) {
     });
 });
 
+app.get('/order', function(req, res, next) {
+  res.render('order.mustache', {});
+});
+
 app.get('/authtoken', function(req, res, next) {
   console.log(req);
   var token = req.body.access_token;
