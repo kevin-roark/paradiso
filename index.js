@@ -14,13 +14,13 @@ app.set('views', __dirname + '/views');
 
 if ('development' == process.env.NODE_ENV) {
   app.use('/main.js', browserify('./client/login.js'));
-  app.use('/order.js', browerserif('./client/app.js'))
+  app.use('/order.js', browserify('./client/app.js'))
 }
 app.use(express.static(__dirname + '/public'));
 
 var DELIV = 'http://sandbox.delivery.com';
-var CLIENT = 'abc';
-var SECRET = '';
+var CLIENT = 'M2UyMTRiY2Q5YjU0MmIxMzhiNmJjZDc2OWQzMmM5YTFm';
+var SECRET = 'y3pLOCSSxUjITwhCFTlRN0HDOT0HVwer47ufbacR';
 
 app.get('/', function(req, res, next) {
   res.render('index.mustache', {});
@@ -43,7 +43,7 @@ app.get('/inside', function(req, res, next) {
     .set('client_secret', SECRET)
     .set('code', code)
     .set('grant_type', 'authorization_code')
-    .set('redirect_uri', '/authtoken')
+    .set('redirect_uri', US + '/authtoken')
     .end(function(err, res) {
 
     });
